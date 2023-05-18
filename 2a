@@ -1,0 +1,18 @@
+#include<iostream> usingnamespacestd;
+classLoginManager
+{
+public: stringuserNameAttempt; stringpassWordAttempt;
+LoginManager(){ accessGranted=0;
+}
+voidlogin(){ cout<<"Heyyouneedtoenteryourpasswordanduser.\nUsername:"; cin>>userNameAttempt;
+if(userNameAttempt==userName){ cout<<"Password:"; cin>>passWordAttempt;
+if(passWordAttempt==passWord){ cout<<"Hey,that'sright.";
+}
+}
+}
+private: stringpassWord="gaikwad@123"; stringuserName= "poonamgaikwad2002@email.com"; boolaccessGranted;
+};
+intmain()
+{
+LoginManagerloginManagerObj; loginManagerObj.login();
+}
